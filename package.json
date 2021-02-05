@@ -2,9 +2,9 @@
   "name": "nodejs-twitter-workshop",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/yuttasakcom/nodejs-twitter-workshop/issues"
   },
-  "homepage": "https://github.com/yuttasakcom/nodejs-twitter-workshop#readme"
+  "homepage": "https://github.com/yuttasakcom/nodejs-twitter-workshop#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.1",
+    "koa-pug": "^4.0.4",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.9.0-alpha.6",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.7",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1"
+  }
 }
