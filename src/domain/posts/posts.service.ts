@@ -1,6 +1,7 @@
 import { Service } from 'typedi';
-
-@Service('posts')
-class PostsService {}
-
-export default PostsService;
+@Service()
+export class PostsService {
+  get() {
+    return [{ id: 1, title: 'Post1' }];
+  }
+}

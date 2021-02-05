@@ -1,13 +1,12 @@
 import { Controller, Get } from 'routing-controllers';
+import { PostsService } from './posts.service';
 
 @Controller('/posts')
-class PostController {
-  constructor() {}
+export class PostController {
+  constructor(private service: PostsService) {}
 
   @Get()
   get() {
-    return [{ id: 1, title: 'Post1' }];
+    return this.service.get();
   }
 }
-
-export default PostController;
